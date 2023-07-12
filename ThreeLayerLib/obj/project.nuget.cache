@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GDyu93jbAlu32XA03DSEgwRN2nyUzVkVb2/pisBB14mRG0piovBHKgRfZWWyY8JZp0ugtgSiteG5agODyGWZbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\ThreeLayerLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shuhe\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512"
+  ],
+  "logs": []
+}

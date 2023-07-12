@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\ThreeLayerLib.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\ThreeLayerLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\ThreeLayerLib.csproj",
+        "projectName": "ThreeLayerLib",
+        "projectPath": "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\ThreeLayerLib.csproj",
+        "packagesPath": "C:\\Users\\shuhe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shuhe\\OneDrive\\Documents\\project 1\\PJ1\\ThreeLayerLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\shuhe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "mysqlconnector": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

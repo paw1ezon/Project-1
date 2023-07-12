@@ -1,0 +1,49 @@
+CREATE SCHEMA bakerystore; 
+
+USE bakerystore;
+
+CREATE TABLE Users (
+ID INT AUTO_INCREMENT,
+User_Name VARCHAR(50) NOT NULL,
+Password VARCHAR(50) NOT NULL,
+Role_ID INT NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE Products (
+ID INT AUTO_INCREMENT,
+Product_Name VARCHAR(50) NOT NULL,
+Quantity INT NOT NULL,
+Price DECIMAL NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE Orders (
+ID INT AUTO_INCREMENT,
+User_ID INT NOT NULL,
+CreationTime DATETIME NOT NULL,
+PaymentMethod VARCHAR(50),
+OrderStatus VARCHAR(50) DEFAULT 'Unprocessed',
+PRIMARY KEY (ID),
+FOREIGN KEY (User_ID) REFERENCES Users(ID)
+);
+
+CREATE TABLE OrderDetails (
+Order_ID INT NOT NULL,
+Product_Name VARCHAR(50) NOT NULL,
+Product_Quantity INT NOT NULL
+);
+
+INSERT INTO Users(User_Name, Password, Role_ID) VALUES ('Seller', 'abc123', 1);
+INSERT INTO Users(User_Name, Password, Role_ID) VALUES ('Cashier', 'abc123', 2);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Bơ Đậu Phộng', 22000, 50);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Cua Phô Mai', 45000, 50);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Hoa Cúc', 90000, 20);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Sừng Bò', 45000, 30);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Mocha Kem Sữa', 32000,25);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Bông Lan Cuộn Trà Xanh', 70000, 40);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Bông Lan Phô Mai Nhật', 115000, 30);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Phô Mai Tan Chảy', 90000, 25);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Mì Sanwich Ngũ Cốc', 38000, 65);
+INSERT INTO Products(Product_Name, Price, Quantity) VALUES ('Bánh Bông Lan Phú Sĩ', 55000, 40);
+Insert into orders(User_ID, CreationTime) values(1, current_timestamp());
